@@ -23,7 +23,6 @@
             theme: {
                 extend: {
                     colors: {
-                        'primary-color': '#FF4240',
                         'dark-color': '#131318',
                         'section-description': 'rgba(19, 19, 24, 0.60)'
                     }
@@ -37,19 +36,22 @@
         .font-manrope {
             font-family: "Manrope", sans-serif;
         }
+        .card.image-full:before {
+          background: rgba(19, 19, 24, 0.20);
+        }
     </style>
 </head>
 <body class="font-manrope">
   <!-- header area starts here -->
-  <header class="container mx-auto">
+  <header class="mx-5 lg:mx-32">
     <!-- nav area starts here -->
     <nav class="navbar p-0 my-6 lg:my-12">
       <div class="navbar-start">
         <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden pl-0">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base ">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Pages</a></li>
@@ -72,13 +74,13 @@
       </div>
       <div class="navbar-end">
         <i class="fa-solid fa-magnifying-glass mr-6 hidden lg:block lg:text-2xl text-gray-500"></i>
-        <a class="btn bg-primary-color text-white font-medium text-lg lg:text-xl">Get Ticket</a>
+        <a class="btn bg-red-500 text-white font-medium text-lg lg:text-xl">Get Ticket</a>
       </div>
     </nav>
     <!-- nav area ends here -->
 
     <!-- banner area starts here -->
-    <section class="px-5 lg:px-0">
+    <section>
       <div class="carousel w-full">
         <!-- slide 1 -->
         <div id="slide1" class="carousel-item relative w-full">
@@ -154,9 +156,9 @@
   <!-- header area ends here -->
 
   <!-- main section starts here -->
-  <main class="container mx-auto">
-    <!-- Professionals hockeys club starts here -->
-    <section class="my-24 px-5 lg:px-0">
+  <main class="mx-5 lg:mx-32">
+    <!-- Professional hockeys club starts here -->
+    <section class="my-24">
       <div class="border-t-[1px] border-b-[1px] border-dashed border-dark-color border-opacity-20 text-center py-8">
         <h2 class="text-4xl font-extrabold text-dark-color mb-6">Professional Hockeys Club</h2>
         <p class="text-section-description max-w-xl mx-auto">Join our professional hockey club. Train, compete, and excel with expert coaching and a supportive team environment.</p>
@@ -184,9 +186,65 @@
           </div>
       </div>
     </section>
-    <!-- Professionals hockeys club ends here -->
+    <!-- Professional hockeys club ends here -->
+
+    <!-- Program section starts here -->
+    <section>
+      <div class="border-t-[1px] border-b-[1px] border-dashed border-dark-color border-opacity-20 text-center py-8">
+        <h2 class="text-4xl font-extrabold text-dark-color mb-6">Program Sections</h2>
+        <p class="text-section-description max-w-xl mx-auto">Discover tailored programs designed for your needs, ensuring comprehensive training and support for your personal development journey</p>
+      </div>
+
+      <!-- programs content -->
+      <div class="grid gap-6 grid-cols-1 lg:grid-cols-2 py-12">
+
+        <!-- program 1 -->
+        <div class="card image-full rounded-3xl">
+          <img class="w-full" src="images/slider-2.png" alt="Shoes" />
+          <div class="pt-24 pb-10 px-10 text-white lg:max-w-lg flex items-end">
+           <div>
+            <h2 class="card-title">Junior Program</h2>
+            <p class="py-4">Our junior program offers a nurturing environment for young athletes to thrive. Expert coaching, skill development, and character building are at the core, fostering growth, teamwork, and a lifelong love for the sport.</p>
+            <div class="card-actions">
+              <button class="btn bg-red-500 text-white border-0 text-lg lg:text-xl font-bold">Register Now!</button>
+            </div>
+           </div>
+          </div>
+        </div>
+
+        <!-- program 2 -->
+        <div class="card image-full rounded-2xl">
+          <img class="w-full" src="images/slider-3.png" alt="Shoes" />
+          <div class="pt-24 pb-10 px-10 text-white lg:max-w-lg flex items-end">
+            <div>
+              <h2 class="card-title">Junior Program</h2>
+              <p class="py-4">Our junior program offers young athletes a supportive environment to develop skills, foster teamwork, and cultivate a passion for the sport, setting the foundation for future success and growth</p>
+              <div class="card-actions">
+              <button class="btn bg-red-500 text-white border-0 text-lg lg:text-xl font-bold">Register Now!</button>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- program 3 -->
+        <div class="card image-full rounded-3xl lg:col-span-2 lg:h-[450px]">
+          <img class="lg:w-full h-full" src="images/slider-4.png" alt="Shoes" />
+          <div class="pt-24 pb-8 lg:pb-10 px-10 text-white lg:max-w-lg flex items-end">
+            <div>
+              <h2 class="card-title text-white">Junior Program</h2>
+              <p class="py-4">Our junior program offers young athletes a supportive environment to develop skills, foster teamwork, and cultivate a passion for the sport, setting the foundation for future success and growth</p>
+              <div class="card-actions">
+              <button class="btn bg-red-500 text-white border-0 text-lg lg:text-xl font-bold">Register Now!</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Program section ends here -->
   </main>
   <!-- main section ends here -->
+
 
     <!-- footer area starts here -->
     <footer class="font-manrope">
