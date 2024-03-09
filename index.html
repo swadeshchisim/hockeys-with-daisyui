@@ -24,7 +24,7 @@
                 extend: {
                     colors: {
                         'primary-color': '#FF4240',
-                        'section-title': '#131318',
+                        'dark-color': '#131318',
                         'section-description': 'rgba(19, 19, 24, 0.60)'
                     }
                 }
@@ -41,9 +41,9 @@
 </head>
 <body class="font-manrope">
   <!-- header area starts here -->
-  <header class="container mx-auto py-12">
+  <header class="container mx-auto">
     <!-- nav area starts here -->
-    <nav class="navbar p-0">
+    <nav class="navbar p-0 my-12">
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -75,6 +75,73 @@
         <a class="btn bg-primary-color text-white font-medium text-lg lg:text-xl">Get Ticket</a>
       </div>
     </nav>
+    <!-- nav area ends here -->
+
+    <!-- banner area starts here -->
+    <section>
+      <div class="carousel w-full">
+        <!-- slide 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="images/slider-1.png" class="w-full rounded-xl" />
+          <div class="absolute -bottom-96 mx-4 flex justify-between items-end transform -translate-y-1/2 left-5 right-5 top-1/2">
+           <div>
+            <a href="#slide4" class="btn btn-circle bg-black text-white text-xl">❮</a> 
+            <a href="#slide2" class="btn btn-circle bg-black text-white text-xl">❯</a>
+           </div>
+           <div class="bg-dark-color w-[502px] text-white p-8 rounded-2xl">
+            <h4 class="text-2xl font-extrabold mb-4">Meet all the heroes from the field</h4>
+            <p class="opacity-60">Discover and meet the heroes in your field. Engage, learn, and be inspired by their stories and expertise.</p>
+           </div>
+          </div>
+        </div> 
+
+        <!-- slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="images/slider-2.png" class="w-full rounded-xl" />
+          <div class="absolute -bottom-72 mx-4 flex justify-between items-end transform -translate-y-1/2 left-5 right-5 top-1/2">
+           <div class="my-4">
+            <a href="#slide4" class="btn btn-circle bg-black text-white text-xl">❮</a> 
+            <a href="#slide3" class="btn btn-circle bg-black text-white text-xl">❯</a>
+           </div>
+           <div class="bg-dark-color w-[502px] text-white p-8 rounded-2xl">
+            <h4 class="text-2xl font-extrabold mb-4">Meet all the heroes from the field</h4>
+            <p class="opacity-60">Discover and meet the heroes in your field. Engage, learn, and be inspired by their stories and expertise.</p>
+           </div>
+          </div>
+        </div> 
+
+        <!-- slide 3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="images/slider-3.png" class="w-full rounded-xl" />
+          <div class="absolute -bottom-72 mx-4 flex justify-between items-end transform -translate-y-1/2 left-5 right-5 top-1/2">
+           <div class="my-4">
+            <a href="#slide4" class="btn btn-circle bg-black text-white text-xl">❮</a> 
+            <a href="#slide4" class="btn btn-circle bg-black text-white text-xl">❯</a>
+           </div>
+           <div class="bg-dark-color w-[502px] text-white p-8 rounded-2xl">
+            <h4 class="text-2xl font-extrabold mb-4">Meet all the heroes from the field</h4>
+            <p class="opacity-60">Discover and meet the heroes in your field. Engage, learn, and be inspired by their stories and expertise.</p>
+           </div>
+          </div>
+        </div> 
+
+        <!-- slide 4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="images/slider-4.png" class="w-full rounded-xl" />
+          <div class="absolute -bottom-72 mx-4 flex justify-between items-end transform -translate-y-1/2 left-5 right-5 top-1/2">
+           <div class="my-4">
+            <a href="#slide4" class="btn btn-circle bg-black text-white text-xl">❮</a> 
+            <a href="#slide1" class="btn btn-circle bg-black text-white text-xl">❯</a>
+           </div>
+           <div class="bg-dark-color w-[502px] text-white p-8 rounded-2xl">
+            <h4 class="text-2xl font-extrabold mb-4">Meet all the heroes from the field</h4>
+            <p class="opacity-60">Discover and meet the heroes in your field. Engage, learn, and be inspired by their stories and expertise.</p>
+           </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+    <!-- banner area ends here -->
   </header>
   <!-- header area ends here -->
 
