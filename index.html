@@ -23,7 +23,7 @@
             theme: {
                 extend: {
                     colors: {
-                        'primary-bolor': '#FF4240',
+                        'primary-color': '#FF4240',
                         'section-title': '#131318',
                         'section-description': 'rgba(19, 19, 24, 0.60)'
                     }
@@ -39,11 +39,56 @@
         }
     </style>
 </head>
-<body>
-    
+<body class="font-manrope">
+  <!-- header area starts here -->
+  <header class="container mx-auto py-12">
+    <!-- nav area starts here -->
+    <nav class="navbar p-0">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <a class="text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-red-500 p-0">’</span>s</a>
+        </div>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-base gap-6">
+          <li><a class="hover:bg-red-500 hover:text-white" href="#">Home</a></li>
+          <li><a class="hover:bg-red-500 hover:text-white" href="#">About</a></li>
+          <li><a class="hover:bg-red-500 hover:text-white" href="#">Pages</a></li>
+          <li><a class="hover:bg-red-500 hover:text-white" href="#">Blog</a></li>
+          <li><a class="hover:bg-red-500 hover:text-white" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <i class="fa-solid fa-magnifying-glass mr-6 hidden lg:block lg:text-2xl text-gray-500"></i>
+        <a class="btn bg-primary-color text-white font-medium text-lg lg:text-xl">Get Ticket</a>
+      </div>
+    </nav>
+  </header>
+  <!-- header area ends here -->
 
+  <!-- main section starts here -->
+  <main class="container mx-auto">
 
-   
+  </main>
+  <!-- main section ends here -->
+
+    <!-- footer area starts here -->
+    <footer class="font-manrope">
+       
+    </footer>
+  <!-- footer area ends here -->
 
 </body>
 </html>
