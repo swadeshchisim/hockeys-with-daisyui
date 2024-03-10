@@ -604,7 +604,7 @@
       </div>
 
       <!-- get in touch content -->
-      <div class="flex justify-between py-12">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 py-12">
         <!-- contact information -->
         <div class="flex flex-col gap-6 p-12 border-y-2 border-dark-color border-opacity-10">
           <div class="bg-[#BCED6D1A] p-8 rounded">
@@ -631,12 +631,44 @@
         </div>
 
         <!-- contact input -->
-        <div>
-          <div>
-            <label for="name">
-              <p>Your Name</p>
-              <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+        <div class="col-span-2">
+          <div class="flex flex-col md:flex-row lg:flex-row gap-6 pb-6">
+            <label for="name" class="w-full">
+              <p class="text-dark-color font-bold text-xl mb-4">Your Name</p>
+              <input type="text" placeholder="enter your full name" class="input w-full" />
             </label>
+            <label for="name" class="w-full">
+              <p class="text-dark-color font-bold text-xl mb-4">Your Email</p>
+              <input type="email" placeholder="enter your email" class="input w-full" />
+            </label>
+          </div>
+          <div class="flex flex-col md:flex-row lg:flex-row gap-6 pb-6">
+            <label for="subject" class="w-full">
+              <p class="text-dark-color font-bold text-xl mb-4">Subject</p>
+              <input id="subject" type="text" placeholder="enter your subject" class="input w-full" />
+            </label>
+            <label for="email" class="w-full">
+              <p class="text-dark-color font-bold text-xl mb-4">Your Email</p>
+              <input id="email" type="number" placeholder="enter your phone number" class="input w-full" />
+            </label>
+          </div>
+          <label for="message" class="w-full">
+            <p class="text-dark-color font-bold text-xl mb-4">Message</p>
+            <textarea id="message" placeholder="Write your message" class="textarea textarea-bordered w-full h-52 lg:h-96" ></textarea>
+          </label>
+          <button class="btn bg-red-500 text-white text-xl font-bold btn-lg w-full mt-12">Send Message</button>
+        </div>
+      </div>
+
+      <!-- social area -->
+      <div class="text-dark-color flex justify-center py-8">
+        <div>
+          <h4 class="font-extrabold text-2xl pb-6">Social Media</h4>
+          <div class="flex gap-6 text-2xl">
+            <a href="https://bitly.ws/3fsh2" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://bitly.ws/3fsgT" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://bitly.ws/3fshd" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://bitly.ws/3fshi" target="_blank"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
       </div>
